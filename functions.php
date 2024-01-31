@@ -74,7 +74,7 @@ function lalutheme_register_required_plugins() {
  
 require get_template_directory() . '/update/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://gremza.com/lalu/info.json',
+	get_template_directory() .'/info.json',
     __FILE__,
     'lalutheme'
 );
